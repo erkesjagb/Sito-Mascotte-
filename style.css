@@ -388,6 +388,7 @@ button:active {
 }
 
 .contenuto p {
+  padding-bottom: 20px;
   font-size: 18px;
   max-width: 700px;
   margin-left: auto;
@@ -764,14 +765,20 @@ button:active {
 }
 
 /* FINE SPECIFICHE */
-/* mascotte al microscopio */
+
+
+/* MASCOTTE AL MICROSCOPIO */
+
+
+
 .mascotte-section {
-  padding: 40px 180px;
+  padding: 60px 180px;
 }
 .mascotte-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 
 }
 .mascotte-left img {
@@ -825,18 +832,11 @@ margin-top: 30x;
   flex: 1;
   max-width: 400px;
 }
-.step {
-  margin-bottom: 40px;
-}
-.step h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 0 10px 0;
-}
-.step p {
+
+.processo-testo p {
   font-size: 18px;
-  margin: 0;
 }
+
 .processo-immagini {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -870,7 +870,13 @@ justify-content: center;
   font-size: 48px;
   margin: 0;
 }
-/* fine mascotte al microscopio */
+
+.titolo-processo h3 {
+  font-size: 48px;
+}
+
+
+/* FINE MASCOTTE AL MICROSCOPIO */
 
 
 /* FOOTER */
@@ -1479,4 +1485,13 @@ flex-direction: column;
   font-size: 30px;
 }
 
+
+.titolo-processo h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+li {
+  font-size: 16px;
+}
 }

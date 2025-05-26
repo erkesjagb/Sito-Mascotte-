@@ -764,6 +764,114 @@ button:active {
 }
 
 /* FINE SPECIFICHE */
+/* mascotte al microscopio */
+.mascotte-section {
+  padding: 40px 180px;
+}
+.mascotte-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.mascotte-left img {
+  width: 427px;
+  height: auto;
+  display: block;
+}
+.mascotte-right {
+  max-width: 500px;
+}
+.mascotte-right h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.label {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.designer {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.description {
+  font-size: 18px;
+}
+.contenuto-elenco {
+font-size: 18px;
+max-width: 700px;
+margin-left: auto;
+margin-top: 30x;
+}
+.contenuto-elenco li {
+  padding-bottom: 25px;
+}
+
+.processo-section {
+  padding: 0px 60px;
+}
+.processo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+.processo-testo {
+  flex: 1;
+  max-width: 400px;
+}
+.step {
+  margin-bottom: 40px;
+}
+.step h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.step p {
+  font-size: 18px;
+  margin: 0;
+}
+.processo-immagini {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; 
+  flex: 1;
+}
+.processo-immagini img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.linea-immagini {
+  padding: 80px 60px;
+}
+.immagini-3 {
+display: flex;
+gap: 20px;
+align-items: center;
+justify-content: center;
+}
+.immagini-3 img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.testo h3 {
+  font-size: 48px;
+  margin: 0;
+}
+/* fine mascotte al microscopio */
+
 
 /* FOOTER */
 
@@ -847,6 +955,12 @@ footer {
 
 
 
+@media (max-width: 1000px) {
+
+.immagini-3 img {
+  width: 240px;
+}
+}
 
 @media (max-width: 1200px) {
   
@@ -943,6 +1057,12 @@ footer {
 .card2 h4{
   font-size: 20px;
 }
+
+.mascotte-section {
+  padding: 40px 90px;
+}
+
+
 
 
 
@@ -1326,4 +1446,37 @@ height: 200px;
 .categorie h4 {
   font-size: 20px;
 }
+
+.mascotte-section {
+  padding: 40px 90px;
+}
+.mascotte-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .description {
+  font-size: 16px;
+  text-align: left;
+}
+
+.immagini-3 {
+flex-direction: column;
+}
+.immagini-3 img {
+  width: 70%;
+}
+
+.processo-wrapper {
+  flex-direction: column;
+}
+
+.step p {
+  font-size: 16px;
+}
+
+.testo h3 {
+  font-size: 30px;
+}
+
 }

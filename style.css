@@ -321,8 +321,8 @@ button:active {
 
 .testo-home {
   margin: 50px;
-  margin-left: 35%;
   width: 60%;
+  margin-left: auto;
 }
 
 .testo-home p {
@@ -1284,7 +1284,9 @@ footer {
 }
 
 .testo-home {
-  margin: 0;
+  margin: 0 auto;
+  width: 400px;
+
 }
 
 .testo-home p {

@@ -338,7 +338,7 @@ button:active {
 .navigazione{
 
   margin-top: 110px;
-  padding: 0px 100px;
+  padding: 0px 60px;
 }
 
 .link-navigazione a{
@@ -350,7 +350,7 @@ button:active {
 .link-navigazione{
   display: flex;
   gap: 10px;
-  font-size: 16px;
+  font-size: 14px;
   align-items: center;
 }
 
@@ -642,15 +642,20 @@ button:active {
 
 
 .mascotte-cards {
-  padding: 70px 60px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:40px;
+  padding: 70px 60px;
+  justify-content: flex-start; 
 }
 
 .card2{
-  text-align: center;
+  flex: 1 1 calc(33.333% - 40px); 
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .contenitore2 {
@@ -709,7 +714,7 @@ button:active {
 
 .contenitore-griglia {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
   padding: 40px 60px;
   text-align: center;
@@ -749,8 +754,6 @@ button:active {
   font-weight: bold;
 }
 
-
-
 /* FINE MASCOTTE */
 
 /* SPECIFICHE */
@@ -763,7 +766,6 @@ button:active {
   font-size: 48px;
   font-weight: bold;
 }
-
 /* FINE SPECIFICHE */
 
 
@@ -878,6 +880,47 @@ justify-content: center;
 
 /* FINE MASCOTTE AL MICROSCOPIO */
 
+/* MASCOTTE ALTRE*/
+
+.mascotte-wrapper-2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+
+}
+
+.testo4{
+  padding: 40px 60px;
+}
+
+.contenuto-centrale{
+  margin: 0 auto; 
+  width: 700px;
+  text-align: left;
+}
+
+.contenuto-centrale p {
+  font-size: 18px;
+}
+
+.immagini-singole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  gap: 20px;
+  padding: 40px 0; 
+}
+
+.immagini-singole img {
+  max-width: 100%;
+  width: 700px;
+  height: auto;
+  border-radius: 20px;  
+}
+
+/* FINE MASCOTTE ALTRE*/
+
 
 /* FOOTER */
 
@@ -966,10 +1009,11 @@ footer {
 .immagini-3 img {
   width: 240px;
 }
+
 }
 
 @media (max-width: 1200px) {
-  
+
 .background {
   height: auto;
   padding-bottom: 40px;
@@ -1069,10 +1113,9 @@ footer {
 }
 
 
-
-
-
-
+.mascotte-wrapper-2 {
+  gap: 10px;
+}
 
 
 }
@@ -1407,21 +1450,27 @@ footer {
 }
 
 
-.mascotte-cards {
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
+  .mascotte-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
-.card2 {
-  max-width: 100%;
-}
+  .card2 {
+    max-width: 90%;
+    width: 90%;
+  }
 
-.contenitore2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+  .contenitore2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenitore2 img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+  }
 
 .card2 h4 {
   font-size: 24px;
@@ -1494,4 +1543,23 @@ flex-direction: column;
 li {
   font-size: 16px;
 }
+
+.mascotte-wrapper-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.contenuto-centrale {
+  width: auto;
+}
+
+.contenuto-centrale p{
+  font-size: 16px
+}
+
+.immagini-singole img {
+  width: 450px;
+}
+
 }

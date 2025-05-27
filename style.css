@@ -1571,8 +1571,11 @@ li {
   font-size: 16px
 }
 
+.immagini-singole {
+    padding: 0px 20px;
+}
 .immagini-singole img {
-  width: 450px;
+  width: 380px;
 }
 
 .contenuto-immagini {

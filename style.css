@@ -967,6 +967,11 @@ footer {
   flex: 1 1 150px;
 }
 
+.footer-colonne a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer-colonne h4 {
   font-weight: bold;
   margin-bottom: 25px;
@@ -1287,6 +1292,7 @@ footer {
 .testo-home {
   margin: 0 auto;
   width: 100%;
+  padding: 0;
 
 }
 
@@ -1297,6 +1303,7 @@ footer {
 .contenuto-immagini {
   padding: 0px 60px;
 }
+
 
 
 .start {
@@ -1565,4 +1572,8 @@ li {
   width: 450px;
 }
 
+.contenuto-immagini {
+  flex-direction: column;
+  align-items: center;
+}
 }

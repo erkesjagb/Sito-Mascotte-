@@ -337,22 +337,25 @@ button:active {
 /* STORIA */
 
 .navigazione{
-
   margin-top: 110px;
   padding: 0px 60px;
+  gap: 0;
 }
 
 .link-navigazione a{
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  gap: 0;
 }
 
 .link-navigazione{
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
   font-size: 14px;
+  column-gap: 1px;     
   align-items: center;
+  line-height: 0.05;
 }
 
 .start {
@@ -1575,5 +1578,13 @@ li {
 .contenuto-immagini {
   flex-direction: column;
   align-items: center;
+}
+
+.navigazione {
+  padding: 0 20px;
+}
+
+.link-navigazione {
+  font-size: 10px;
 }
 }

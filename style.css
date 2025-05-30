@@ -116,11 +116,15 @@ main {
   justify-content: center;
 }
 
+.section-hero img{
+  max-width: 85%;
+}
+
 .introduzione-home{
   max-width: 1500px;
   margin: auto;
   display: flex;
-  padding: 40px 60px;
+  padding: 100px 60px;
   gap: 150px;
 
 }
@@ -142,10 +146,24 @@ main {
   padding: 0px 60px;
 }
 
+.esplorazione {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .esplorazione h1{
-  margin: 10px auto;
   padding-bottom: 20px;
   font-size: 48px;
+  font-weight: bold;
+}
+
+
+.esplorazione a {
+  color: inherit;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -200,6 +218,7 @@ main {
 }
 
 button {
+  border-radius: 50px;
   cursor: pointer;
   font-family: 'Outfit', sans-serif;
   background-color: #71B4E2;
@@ -232,22 +251,18 @@ button:active {
   font-weight: bold;
 }
 
-.bottone-sottolineato2 {
-  max-width: 1500px;
-  margin: auto;
-  padding: 70px 60px;
-  text-align: end;
 
-}
-
-.bottone-sottolineato2 a{
-  color: inherit;
-  font-size: 18px;
-  font-weight: bold;
+.section-center {
+  padding-top: 250px;
 }
 
 .section-center a {
   text-decoration: none;
+  color: inherit;
+}
+
+.sottolineato a{
+  text-decoration: underline;
 }
 
 .box-home{
@@ -273,19 +288,17 @@ button:active {
   transform: scale(0.95);
 }
 
-.section-center {
-  text-decoration: none;
-  color: inherit;
-}
-
 .box-testo {
-  padding: 66px;
+  padding: 60px;
   color: #fff;
 }
 
 .box-testo h2 {
+  margin: 0;
   font-size: 48px;
   font-weight: bold;
+  line-height: 1.1;
+
 }
 
 .box-testo p {
@@ -305,7 +318,8 @@ button:active {
 .section-end {
   max-width: 1500px;
   margin: auto;
-  padding: 40px 60px;
+  padding: 200px 60px 80px;
+  align-items: baseline;
 }
 
 .immagini {
@@ -349,7 +363,6 @@ button:active {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  gap: 0;
 }
 
 .link-navigazione{
@@ -359,6 +372,7 @@ button:active {
   column-gap: 1px;     
   align-items: center;
   line-height: 0.05;
+  gap: 10px;
 }
 
 .start {
@@ -374,7 +388,7 @@ button:active {
 
 .testata p {
   font-size: 24px;
-  max-width: 800px;
+  max-width: 650px;
   margin-left: auto;
 }
 
@@ -476,7 +490,7 @@ button:active {
 
 .testata2 p {
   font-size: 24px;
-  max-width: 800px;
+  max-width: 650px;
   margin-left: auto;
 }
 
@@ -1523,6 +1537,7 @@ height: 200px;
 .mascotte-section {
   padding: 40px 90px;
 }
+
 .mascotte-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1589,14 +1604,28 @@ li {
 }
 
 .navigazione {
-  padding: 0 20px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
 }
 
-.link-navigazione {
-  font-size: 10px;
+
+.esplorazione{
+  flex-direction: column;
 }
 
-.material-symbols-outlined {
-  font-size: 4px;
+.esplorazione h1 {
+  margin-right: auto;
 }
+
+.esplorazione a {
+  margin-left: auto;
+  padding-bottom: 40px;
+}
+
+.box-testo p{
+  margin: 40px 0px;
+}
+ 
+
 }

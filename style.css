@@ -1,15 +1,26 @@
 body {
     font-family: 'Outfit', sans-serif;
-    max-width: 1500px;
     margin: 0 auto;
     padding: 0;
 
   }
 
-
-.img {
+img {
     max-width: 100%;
     display: block;
+}
+
+main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 136px 32px;
+  padding-bottom: 64px;
+}
+
+
+.contenitore {
+	max-width: 1500px; 
+	margin: 0 auto;
 }
 
 
@@ -104,7 +115,6 @@ body {
 /*HOMEPAGE */
 
 .background {
-  height: 780px;
   background-color: #71B4E2;
 }
 
@@ -115,12 +125,11 @@ body {
 }
 
 .section-hero img {
-  margin-top: 135px;
-  height: auto;
-  max-width: 85%;
 }
 
 .introduzione-home{
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   padding: 40px 60px;
   gap: 150px;
@@ -139,6 +148,8 @@ body {
 }
 
 .mascotte-home {
+  max-width: 1500px;
+  margin: auto;
   padding: 0px 60px;
 }
 
@@ -233,10 +244,9 @@ button:active {
 }
 
 .bottone-sottolineato2 {
-  
-  padding: 10px 60px;
-  margin-top: 30px;
-  margin-bottom: 100px;
+  max-width: 1500px;
+  margin: auto;
+  padding: 70px 60px;
   text-align: end;
 
 }
@@ -252,8 +262,9 @@ button:active {
 }
 
 .box-home{
+  max-width: 1500px;
+  margin: auto;
   cursor: pointer;
-  margin: 40px 60px;
   background: linear-gradient(#71B4E2, #9FD6F2);
   border-radius: 20px;
   height: 340px;
@@ -303,6 +314,8 @@ button:active {
 }
 
 .section-end {
+  max-width: 1500px;
+  margin: auto;
   padding: 40px 60px;
 }
 
@@ -337,7 +350,8 @@ button:active {
 /* STORIA */
 
 .navigazione{
-  margin-top: 110px;
+  max-width: 1250px;
+  margin: auto;
   padding: 0px 60px;
   gap: 0;
 }
@@ -929,6 +943,8 @@ justify-content: center;
 /* FOOTER */
 
 footer {
+  max-width: 1500px;
+  margin: auto;
   margin-top: 100px;
   background-color: #000;
   color: #fff;

@@ -17,13 +17,6 @@ main {
   padding-bottom: 64px;
 }
 
-
-.contenitore {
-	max-width: 1500px; 
-	margin: 0 auto;
-}
-
-
 .autoShow{
     animation: autoShowAnimation both;
     animation-timeline: view(100% 1%);

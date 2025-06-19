@@ -663,16 +663,13 @@ button:active {
 
 
 .mascotte-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap:40px;
-  padding: 70px 60px;
-  justify-content: flex-start; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 0px 60px;
 }
 
 .card2{
-  flex: 1 1 calc(33.333% - 40px); 
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -734,18 +731,17 @@ button:active {
 
 
 .contenitore-griglia {
+  padding: 0px 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-  padding: 40px 60px;
-  text-align: center;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .categorie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;  
 }
 
 .categorie a{
@@ -774,6 +770,11 @@ button:active {
   font-size: 24px;
   font-weight: bold;
 }
+
+.alineamento{
+  text-align: center;
+}
+
 
 /* FINE MASCOTTE */
 
@@ -961,7 +962,6 @@ footer {
 
 .footer-sopra {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 60px;
   margin-bottom: 70px;
@@ -983,6 +983,11 @@ footer {
 .github {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.github:hover {
+  transform: scale(1.1);
 }
 
 .footer-colonne {
@@ -1012,6 +1017,29 @@ footer {
   color: #c1c1c1;
 }
 
+.footer-colonne ul li a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-colonne ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.footer-colonne ul li a:hover::after {
+  width: 100%;
+}
+
 .footer-sotto1 {
   color: #ccc;
   display: flex;
@@ -1024,12 +1052,40 @@ footer {
   gap: 10px;
 }
 
+.footer-sotto1 a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.footer-sotto1 a{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-sotto1 a::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.footer-sotto1 a:hover::after {
+  width: 100%;
+}
+
 .footer-sotto2 {
   font-size: 16px;
   color: #aaa;
   margin: 0;
 }
-
 
 
 @media (max-width: 1000px) {
@@ -1044,7 +1100,6 @@ footer {
 
 .background {
   height: auto;
-  padding-bottom: 40px;
 }
 
 .card {
@@ -1122,8 +1177,13 @@ footer {
   font-size: 40px;
 }
 
+.mascotte-cards {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 20px;
+}
+
 .card2 {
-  max-width: 30%; 
+  max-width: 100%; 
 }
 
 .contenitore2 {
@@ -1329,7 +1389,7 @@ footer {
 
 
 .start {
-  padding: 0px 60px;
+  padding: 0px 20px;
 }
 
 .testata h1 {
@@ -1343,7 +1403,7 @@ footer {
 
 .testo {
   margin-top: 130px;
-  padding: 0px 60px;
+  padding: 0px 20px;
   flex-direction: column;
 }
 
@@ -1481,28 +1541,28 @@ footer {
   height: 200px
 }
 
+.mascotte-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
 
-  .mascotte-cards {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
 
-  .card2 {
-    max-width: 90%;
-    width: 90%;
-  }
+.card2 {
+  max-width: 90%;
+  width: 90%;
+}
 
-  .contenitore2 {
-    width: 100%;
-    height: auto;
-  }
+.contenitore2 {
+  width: 100%;
+  height: auto;
+}
 
-  .contenitore2 img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: contain;
-  }
+.contenitore2 img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
 
 .card2 h4 {
   font-size: 24px;
@@ -1626,6 +1686,24 @@ li {
 .box-testo p{
   margin: 40px 0px;
 }
- 
+
+.contenitore-griglia{
+  flex-direction: column;
+}
+
+.categorie{
+  padding-bottom: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenitore-categorie img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+
 
 }

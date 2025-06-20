@@ -1595,15 +1595,16 @@ height: 200px;
 }
 
 .mascotte-section {
-  padding: 40px 90px;
+  padding: 40px 20px;
 }
 
 .mascotte-wrapper {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  .description {
+}
+
+.description {
   font-size: 16px;
   text-align: left;
 }
@@ -1704,6 +1705,19 @@ li {
   aspect-ratio: 1/1;
 }
 
+.processo-section{
+  padding: 20px 20px;
+}
 
+.processo-section p{
+  font-size: 16px;
+}
 
+.tipo {
+  padding: 30px 0px;
+}
+
+.tipo-titolo h1 {
+  font-size: 30px;
+}
 }

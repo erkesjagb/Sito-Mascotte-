@@ -1718,10 +1718,24 @@ li {
 }
 
 .tipo-titolo h1 {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .testo4 {
   padding: 0px 20px;
+  margin-bottom: 30px;
 }
+
+.testo-end{
+  padding: 0px 20px;
+}
+
+.sezioni{
+  padding: 0px 20px;
+}
+
+.sezioni-end{
+  padding: 0px 20px;
+}
+
 }
